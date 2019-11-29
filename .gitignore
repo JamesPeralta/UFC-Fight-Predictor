@@ -9,6 +9,7 @@
 /.pnp
 .pnp.js
 *.deb
+**/__pycache__/**
 
 # zip
 *.tgz
