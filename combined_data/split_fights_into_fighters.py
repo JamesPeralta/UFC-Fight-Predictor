@@ -57,6 +57,5 @@ def split_fights_into_fighters(fight_data_frame):
     fights_all.sort_values(by=['fighter', 'date'], inplace=True)
 
     print('Fights 2x shape: {}'.format(fights_all.shape))
-    print('The cols in each fight are:\n\t{}'.format('\n\t'.join(['{}: {}'.format(index, col) for index, col in enumerate(fights_all.columns)])))
 
     return fights_all

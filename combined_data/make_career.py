@@ -1,6 +1,5 @@
 from pandas import read_csv
 import numpy as np
-from numpy import newaxis
 from split_fights_into_fighters import split_fights_into_fighters
 
 
@@ -32,6 +31,7 @@ def make_career(fight_data_frame, N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
 
     for fighter in fighters:
         fights = fights_all[fights_all['fighter'] == fighter].copy()
+
         fights.sort_values(by=['date'], inplace=True)
         fights.reset_index(inplace=True)
         fights.drop(columns=['index'], inplace=True)
@@ -45,24 +45,28 @@ def make_career(fight_data_frame, N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
             end_index = end - 1
             future_index = end
 
-            sliced = fights.loc[start_index: end_index].to_numpy()
-            one_row = sliced[newaxis, :, :]
+            sliced_df = fights.loc[start_index: end_index]
 
+            sliced = []
+            for index, row in sliced_df.iterrows():
+                sliced.append(row.to_dict())
+
+            sliced = [np.array(sliced)]
             if features is None:
-                features = np.array(one_row)
+                features = np.array(sliced)
             else:
-                features = np.concatenate((features, one_row), axis=0)
+                features = np.concatenate((features, sliced), axis=0)
 
             futures = []
             for i in range(N_FUTURE_LABELS):
                 futures.append(fights.loc[future_index]['Winner'])
                 future_index += 1
 
-            futures = np.array(futures, dtype=bool)
+            futures = [np.array(futures)]
             if labels is None:
-                labels = np.array([futures])
+                labels = np.array(futures)
             else:
-                labels = np.concatenate(([futures], labels), axis=0)
+                labels = np.concatenate((labels, futures), axis=0)
 
             start += 1
             end += 1
@@ -75,8 +79,8 @@ def make_career(fight_data_frame, N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
     print('\nLabels is a 2D matrix with {} rows\nEach row contains the the prediction for the next {} fight(s)'.format(
         labels.shape[0], N_FUTURE_LABELS))
 
-    return (features, labels)
+    return features, labels
 
 
-# Example
-make_career(read_csv('../ufcdata/data.csv'))
+# Example usage
+# features, labels = make_career(read_csv('../combined_data/combined_fight_data.csv'))
