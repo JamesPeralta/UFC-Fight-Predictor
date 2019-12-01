@@ -1,0 +1,6 @@
+round_epochs,val_loss,val_accuracy,loss,accuracy,activation,batch_size,dropout,epochs,flatten_layer,kernel_size,last_activation,losses,lr,num_filters,optimizer
+5,0.7099803688010452,0.5141065716743469,0.635854944840675,0.6349776,<function relu at 0x13c0421e0>,64,0.0,5,100,1,<function sigmoid at 0x13c0422f0>,<function binary_crossentropy at 0x13bfe0ae8>,0.2,64,<class 'keras.optimizers.Adam'>
+5,0.7005748583107034,0.5256008505821228,0.6072102580904426,0.68609864,<function relu at 0x13c0421e0>,64,0.0,5,100,1,<function sigmoid at 0x13c0422f0>,<function binary_crossentropy at 0x13bfe0ae8>,0.2,128,<class 'keras.optimizers.Adam'>
+5,0.7194024535555824,0.5496342778205872,0.5847666067392837,0.70089686,<function relu at 0x13c0421e0>,64,0.0,5,100,1,<function sigmoid at 0x13c0422f0>,<function binary_crossentropy at 0x13bfe0ae8>,0.6000000000000001,64,<class 'keras.optimizers.Adam'>
+5,0.7914063224224461,0.5517241358757019,0.5421574012046437,0.7439462,<function relu at 0x13c0421e0>,64,0.0,5,100,1,<function sigmoid at 0x13c0422f0>,<function binary_crossentropy at 0x13bfe0ae8>,0.6000000000000001,128,<class 'keras.optimizers.Adam'>
+5,0.7045363911516116,0.5381399989128113,0.6253826942679059,0.65246636,<function relu at 0x13c0421e0>,64,0.0,5,100,2,<function sigmoid at 0x13c0422f0>,<function binary_crossentropy at 0x13bfe0ae8>,0.2,64,<class 'keras.optimizers.Adam'>
