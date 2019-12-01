@@ -1,6 +1,6 @@
 from pandas import read_csv
 import numpy as np
-from split_fights_into_fighters import split_fights_into_fighters
+from helper import split_fights_into_fighters
 
 
 # Function that returns the FEATURES and LABELS for fighter careers
@@ -74,7 +74,7 @@ def make_career(fight_data_frame, N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
     print('\nFeatures shape: {}'.format(features.shape))
     print('Labels shape: {}'.format(labels.shape))
 
-    print('\nFeatures is a 3D matrix with {} rows\nEach row contains has {} fights, and each fight has {} cols'.format(
+    print('\nFeatures is a 2D matrix with {} rows\nEach row contains has {} fights, and each fight has {} keys'.format(
         features.shape[0], N_FIGHT_CAREER, fights_all.shape[1]))
     print('\nLabels is a 2D matrix with {} rows\nEach row contains the the prediction for the next {} fight(s)'.format(
         labels.shape[0], N_FUTURE_LABELS))
