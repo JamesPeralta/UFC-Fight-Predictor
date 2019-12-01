@@ -1,6 +1,41 @@
-from pandas import read_csv
+from pandas import read_csv, get_dummies
 import numpy as np
 from helper import split_fights_into_fighters
+from sklearn.preprocessing import LabelEncoder
+
+
+cols_to_drop = ['Referee', 'city', 'country', 'end_how']
+
+
+def clean_up_data(data_frame):
+    df = data_frame.copy()
+    df.drop(columns=cols_to_drop, inplace=True)
+    numerical_cols = []
+    categorical_cols = []
+
+    for col, col_type in zip(df.dtypes.keys(), df.dtypes):
+        if col_type == 'float64' or col_type == 'int64':
+            numerical_cols.append(col)
+        else:
+            categorical_cols.append(col)
+
+    for col_name in categorical_cols:
+        if col_name != 'date' and col_name != 'fighter':
+            null_count = df[df[col_name].isnull()].shape[0]
+            if null_count > 0:
+                df = get_dummies(df, columns=[col_name])
+            else:
+                col_data = df[col_name]
+                le = LabelEncoder().fit(col_data)
+                df[col_name] = le.transform(col_data)
+
+    df = df.fillna(0)
+    for col_name in df.columns:
+        null_count = df[df[col_name].isnull()].shape[0]
+        if null_count > 0:
+            print('{} has {} nulls'.format(col_name, df[df[col_name].isnull()].shape[0]))
+
+    return df
 
 
 # Function that returns the FEATURES and LABELS for fighter careers
@@ -14,11 +49,14 @@ from helper import split_fights_into_fighters
 # For N_FIGHT_CAREER = 5, N_FUTURE_LABELS = 2
 #   Use the last 5 fights of a fighter
 #   And, create labels from the fighter's 6th and 7th fight (booleans)
-def make_career(fight_data_frame, N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
+def make_career(N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
+    raw_data = read_csv('../combined_data/combined_fight_data.csv')
+
     print('Creating careers using {} fight intervals and predicting {} future fights'.format(N_FIGHT_CAREER,
                                                                                              N_FUTURE_LABELS))
 
-    fights_all = split_fights_into_fighters(fight_data_frame)
+    fights_all = split_fights_into_fighters(raw_data)
+    fights_all = clean_up_data(fights_all)
 
     fighter_counts = fights_all.copy().groupby('fighter').size().reset_index(name='count')
     fighter_counts.sort_values(by=['count'], inplace=True, ascending=False)
@@ -34,7 +72,7 @@ def make_career(fight_data_frame, N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
 
         fights.sort_values(by=['date'], inplace=True)
         fights.reset_index(inplace=True)
-        fights.drop(columns=['index'], inplace=True)
+        fights.drop(columns=['index', 'date', 'fighter', 'draw'], inplace=True)
 
         size = fights.shape[0]
         end = N_FIGHT_CAREER
@@ -83,4 +121,4 @@ def make_career(fight_data_frame, N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
 
 
 # Example usage
-# features, labels = make_career(read_csv('../combined_data/combined_fight_data.csv'))
+# features, labels = make_career()
