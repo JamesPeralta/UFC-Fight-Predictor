@@ -1,2 +1,0 @@
-,round_epochs,val_loss,val_accuracy,loss,accuracy,activation,batch_size,dropout,epochs,flatten_layer,kernel_size,last_activation,losses,lr,num_filters,optimizer
-0,5,0.7094671749520576,0.4850574731826782,0.7168491150030253,0.4950690269470215,<function relu at 0x7fe6c06a40d0>,64,0.01,5,100,2,<function sigmoid at 0x7fe6c06a41e0>,<function binary_crossentropy at 0x7fe6c0746ae8>,0.01,64,<class 'keras.optimizers.Adam'>
