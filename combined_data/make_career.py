@@ -54,9 +54,9 @@ def make_career(N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
 
     print('Creating careers using {} fight intervals and predicting {} future fights'.format(N_FIGHT_CAREER,
                                                                                              N_FUTURE_LABELS))
-
     fights_all = split_fights_into_fighters(raw_data)
     fights_all = clean_up_data(fights_all)
+    print('Fights after pre-processing: {}'.format(fights_all.shape))
 
     fighter_counts = fights_all.copy().groupby('fighter').size().reset_index(name='count')
     fighter_counts.sort_values(by=['count'], inplace=True, ascending=False)
@@ -112,7 +112,7 @@ def make_career(N_FIGHT_CAREER=5, N_FUTURE_LABELS=1):
     print('\nFeatures shape: {}'.format(features.shape))
     print('Labels shape: {}'.format(labels.shape))
 
-    print('\nFeatures is a 2D matrix with {} rows\nEach row contains has {} fights, and each fight has {} keys'.format(
+    print('\nFeatures is a 2D matrix with {} rows\nEach row contains has {} fights, and each fight has {} columns'.format(
         features.shape[0], N_FIGHT_CAREER, fights_all.shape[1]))
     print('\nLabels is a 2D matrix with {} rows\nEach row contains the the prediction for the next {} fight(s)'.format(
         labels.shape[0], N_FUTURE_LABELS))
