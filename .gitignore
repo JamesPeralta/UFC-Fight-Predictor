@@ -10,10 +10,9 @@
 .pnp.js
 *.deb
 **/__pycache__/**
-predict_winner/Winner_Predictor/**/*.csv
-predict_on_last_n_fights/UFC_5_Fight_Predictor/**/*.csv
-predict_on_last_n_fights/UFC_5_Fight_Predictor_CNN/**/*.csv
-demos/**/*.csv
+objective*/Winner_Predictor/**/*.csv
+objective*/UFC_5_Fight_Predictor*/**/*.csv
+presentation_demos/**/*.csv
 
 # zip
 *.tgz

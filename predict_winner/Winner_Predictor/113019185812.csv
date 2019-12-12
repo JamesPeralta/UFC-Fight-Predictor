@@ -1,4 +1,0 @@
-round_epochs,val_loss,val_accuracy,loss,accuracy,activation,batch_size,dropout,epochs,first_neuron,hidden_layers,last_activation,losses,lr,optimizer,shapes
-10,0.6940234715176612,0.6731958985328674,0.6959279179046051,0.6167109,<function relu at 0x1342bcbf8>,64,0.0,10,64,1,<function sigmoid at 0x1342bcd08>,<function binary_crossentropy at 0x13426d598>,0.2,<class 'keras.optimizers.Adam'>,brick
-10,0.6820655971458278,0.6783505082130432,0.6841073949499324,0.65428823,<function relu at 0x1342bcbf8>,64,0.0,10,64,1,<function sigmoid at 0x1342bcd08>,<function binary_crossentropy at 0x13426d598>,0.2,<class 'keras.optimizers.Adam'>,funnel
-10,0.7220370456115487,0.5515463948249817,0.7682074334745803,0.61936337,<function relu at 0x1342bcbf8>,64,0.0,10,64,1,<function sigmoid at 0x1342bcd08>,<function binary_crossentropy at 0x13426d598>,0.6000000000000001,<class 'keras.optimizers.Adam'>,brick
