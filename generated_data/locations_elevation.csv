@@ -1,79 +1,165 @@
 location,location_elevation
-"Washington, D.C., USA",125 m
-"São Paulo, Brazil",760 m
-"New York City, New York, USA",10 m
-"Boston, Massachusetts, USA",43 m
-"Tampa, Florida, USA",14.6 m
-"Melbourne, Australia",31 m
-"Copenhagen, Denmark",91 m
-"Mexico City, Mexico",2240 m
-"Vancouver, British Columbia, Canada",152 m
-"Abu Dhabi, United Arab Emirates",27 m
-"Shenzhen, China",943.7 m
-"Anaheim, California, USA",48 m
-"Montevideo, Uruguay",43 m
-"Newark, New Jersey, USA",4 m
-"Edmonton, Alberta, Canada",645 m
-"San Antonio, Texas, USA",198 m
-"Sacramento, California, USA",9 m
-"Las Vegas, Nevada, USA",610 m
-"Minneapolis, Minnesota, USA",264 m
-"Greenville, South Carolina, USA",294 m
-"Chicago, Illinois, USA",182.02 m
-"Stockholm, Sweden",28 m
-"Rochester, New York, USA",154 m
-"Rio de Janeiro, Brazil",1020 m
-"Ottawa, Ontario, Canada",70 m
-"Sunrise, Florida, USA",0 m
-"Atlanta, Georgia, USA",320 m
-"Philadelphia, Pennsylvania, USA",12 m
-"Nashville, Tennessee, USA",182 m
-"London, England, United Kingdom",11 m
-"Wichita, Kansas, USA",397 m
-"Las Vegas, Nevada, Nevada, U.S",610 m
-"Prague, Czech Republic",399 m
-"Phoenix, Arizona, USA",331 m
-"Fortaleza, Brazil",21 m
-"Inglewood, California, USA",40 m
-"Milwaukee, Wisconsin, USA",188 m
-"Toronto, Ontario, Canada",76.5 m
-"Beijing, China",43.5 m
-"Buenos Aires, Argentina",25 m
-"Denver, Colorado, USA",1734 m
-"Moncton, New Brunswick, Canada",70 m
-"Las Vegas, Nevada, U.S",610 m
-"Dallas, Texas, USA",131 m
-"Lincoln, Nebraska, USA",358 m
-"Los Angeles, California, USA",93 m
-"Calgary, Alberta, Canada",1045 m
-"Boise, Idaho, USA",830 m
-"Utica, New York, USA",139 m
-"Liverpool, England, United Kingdom",70 m
-"Saint Petersburg, Russia",175.9 m
-"Adelaide, Australia",727 m
-"Sydney, Australia",130 m
-"Saitama, Japan",20 m
-"Dublin, Ireland",85 m
-"Uncasville, Connecticut, USA",335 m
-"Rosemont, Illinois, USA",194.8 m
-"Brisbane, Australia",27 m
-"Fort Hood, Texas, USA",219 m
-"Belfast, Northern Ireland, United Kingdom",80 m
-"Newcastle, England, United Kingdom",56 m
-"Gold Coast, Australia",16 m
-"Perth, Australia",15 m
-"Glasgow, Scotland, United Kingdom",6 m
-"Hamburg, Germany",116.2 m
-"Fort Campbell, Kentucky, USA",168 m
-"Moscow, Russia",156 m
-"Marina Bay, Singapore",0 m
-"Manila, Philippines",12 m
-"Mashantucket, Connecticut, USA",90 m
-"Chiba, Japan",0 m
-"Kallang, Singapore",15 m
-"Yokohama, Japan",43 m
-"Summerlin, Nevada, USA",822 m
-"Brooklyn, New York, USA",66 m
-"Killeen, Texas, USA",270 m
-"Ledyard, Connecticut, USA",90 m
-"San Juan, Puerto Rico",8 m
+"Washington, D.C., USA",125
+"São Paulo, Brazil",760
+"New York City, New York, USA",10
+"Boston, Massachusetts, USA",43
+"Tampa, Florida, USA",14.6
+"Melbourne, Australia",31
+"Copenhagen, Denmark",91
+"Mexico City, Mexico",2240
+"Vancouver, British Columbia, Canada",152
+"Abu Dhabi, United Arab Emirates",27
+"Shenzhen, China",943.7
+"Anaheim, California, USA",48
+"Montevideo, Uruguay",43
+"Newark, New Jersey, USA",4
+"Edmonton, Alberta, Canada",645
+"San Antonio, Texas, USA",198
+"Sacramento, California, USA",9
+"Las Vegas, Nevada, USA",610
+"Minneapolis, Minnesota, USA",264
+"Greenville, South Carolina, USA",294
+"Chicago, Illinois, USA",182.02
+"Stockholm, Sweden",28
+"Rochester, New York, USA",154
+"Rio de Janeiro, Brazil",1020
+"Ottawa, Ontario, Canada",70
+"Sunrise, Florida, USA",0
+"Atlanta, Georgia, USA",320
+"Philadelphia, Pennsylvania, USA",12
+"Nashville, Tennessee, USA",182
+"London, England, United Kingdom",11
+"Wichita, Kansas, USA",397
+"Las Vegas, Nevada, Nevada, U.S",610
+"Prague, Czech Republic",399
+"Phoenix, Arizona, USA",331
+"Fortaleza, Brazil",21
+"Inglewood, California, USA",40
+"Milwaukee, Wisconsin, USA",188
+"Toronto, Ontario, Canada",76.5
+"Beijing, China",43.5
+"Buenos Aires, Argentina",25
+"Denver, Colorado, USA",1734
+"Moncton, New Brunswick, Canada",70
+"Las Vegas, Nevada, U.S",610
+"Dallas, Texas, USA",131
+"Lincoln, Nebraska, USA",358
+"Los Angeles, California, USA",93
+"Calgary, Alberta, Canada",1045
+"Boise, Idaho, USA",830
+"Utica, New York, USA",139
+"Liverpool, England, United Kingdom",70
+"Santiago, Chile",570
+"Atlantic City, New Jersey, USA",2
+"Glendale, Arizona, USA",351
+"Orlando, Florida, USA",25
+"Austin, Texas, USA",405
+"Belém, Brazil",10
+"Charlotte, North Carolina, USA",232
+"St. Louis, Missouri, USA",142
+"Winnipeg, Manitoba, Canada",239
+"Fresno, California, USA",94
+"Detroit, Michigan, USA",200
+"Shanghai, China",4
+"Norfolk, Virginia, USA",2.13
+"Gdańsk, Poland",180
+"Pittsburgh, Pennsylvania, USA",420
+"Rotterdam, Netherlands",0
+"Uniondale, New York, USA",16
+"Oklahoma City, Oklahoma, USA",366
+"Auckland, New Zealand",196
+"Kansas City, Missouri, USA",277
+"Buffalo, New York, USA",183
+"Halifax, Nova Scotia, Canada",241.9
+"Houston, Texas, USA",32
+"Albany, New York, USA",43
+"Manchester, England, United Kingdom",38
+"Portland, Oregon, USA",15.2
+"Brasília, Brazil",1172
+"Hidalgo, Texas, USA",31
+"Cleveland, Ohio, USA",199
+"Salt Lake City, Utah, USA",1288
+"Sioux Falls, South Dakota, USA",448
+"Curitiba, Brazil",934.6
+"Zagreb, Croatia",158
+"Seoul, South Korea",38
+"Monterrey, Mexico",540
+"Saskatoon, Saskatchewan, Canada",481.5
+"San Diego, California, USA",19
+"Hollywood, Florida, USA",3
+"Berlin, Germany",34
+"New Orleans, Louisiana, USA",6
+"Goiânia, Brazil",749
+"Montreal, Quebec, Canada",233
+"Kraków, Poland",219
+"Fairfax, Virginia, USA",95
+"Porto Alegre, Brazil",10
+"Broomfield, Colorado, USA",1629
+"Barueri, Brazil",719
+"Uberlândia, Brazil",863
+"Tulsa, Oklahoma, USA",194
+"Macau, SAR, China",170.6
+"Bangor, Maine, USA",36
+"San Jose, California, USA",25
+"Albuquerque, New Mexico, USA",1619.1
+"Cincinnati, Ohio, USA",147
+"Baltimore, Maryland, USA",150
+"Quebec City, Quebec, Canada",98
+"Natal, Brazil",30
+"Jaraguá do Sul, Brazil",30
+"Duluth, Georgia, USA",334
+"Belo Horizonte, Brazil",760
+"Indianapolis, Indiana, USA",218
+"Seattle, Washington, USA",158
+"Nottingham, England, United Kingdom",46
+"East Rutherford, New Jersey, USA",0.9
+"Omaha, Nebraska, USA",332
+"Birmingham, England, United Kingdom",140
+"Louisville, Kentucky, USA",142
+"Auburn Hills, Michigan, USA",293
+"Oberhausen, Germany",78
+"Oakland, California, USA",13
+"Memphis, Tennessee, USA",103
+"Cologne, Germany",37
+"Columbus, Ohio, USA",275
+"Fayetteville, North Carolina, USA",80
+"Miami, Florida, USA",2
+"Bossier City, Louisiana, USA",53
+"Tokyo, Japan",40
+"Cedar Rapids, Iowa, USA",247
+"Lake Charles, Louisiana, USA",5
+"Birmingham, Alabama, USA",196
+"Bay St. Louis, Mississippi, USA",7
+"Mobile, Alabama, USA",3
+"Augusta, Georgia, USA",45
+"Dothan, Alabama, USA",98
+"Bayamón, Puerto Rico",16
+"Casper, Wyoming, USA",1560
+"Saint Petersburg, Russia",175.9
+"Adelaide, Australia",727
+"Sydney, Australia",130
+"Saitama, Japan",20
+"Dublin, Ireland",85
+"Uncasville, Connecticut, USA",335
+"Rosemont, Illinois, USA",194.8
+"Brisbane, Australia",27
+"Fort Hood, Texas, USA",219
+"Belfast, Northern Ireland, United Kingdom",80
+"Newcastle, England, United Kingdom",56
+"Gold Coast, Australia",16
+"Perth, Australia",15
+"Glasgow, Scotland, United Kingdom",6
+"Hamburg, Germany",116.2
+"Fort Campbell, Kentucky, USA",168
+"Moscow, Russia",156
+"Marina Bay, Singapore",0
+"Manila, Philippines",12
+"Mashantucket, Connecticut, USA",90
+"Chiba, Japan",0
+"Kallang, Singapore",15
+"Yokohama, Japan",43
+"Summerlin, Nevada, USA",822
+"Brooklyn, New York, USA",66
+"Killeen, Texas, USA",270
+"Ledyard, Connecticut, USA",90
+"San Juan, Puerto Rico",8
